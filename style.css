@@ -186,6 +186,13 @@ body, html
 		font-size: 20px;
 		padding: 10px 30px;
 	}
+	.shop{
+		min-width: 80%;
+	}
+	#shopslika img{
+		max-width: 100%;
+		max-height: 100%;
+	}
 }
 
 @media screen and (max-width: 1320px)
@@ -202,6 +209,9 @@ body, html
 	}
 	#shopslika{
 		max-height: 300px;
+	}
+	#shopslika img{
+		width: 40%;
 	}
 }
 
@@ -266,6 +276,9 @@ body, html
 	}
 	#shopslika{
 		max-height: 200px;
+	}
+	.logokontakt{
+		visibility: hidden;
 	}
 }
 
@@ -514,10 +527,9 @@ button:hover
 	height: 400px;
 }
 
-#shopslika img
-{
-	max-width: 90%;
-	height: auto;
+#shopslika img{
+	max-width: 100%;
+	max-height: 100%;
 	margin-bottom: 20px;
 }
 
@@ -553,4 +565,7 @@ button:hover
 	width: 300px;
 	height: 300px;
 	animation: spin 5s alternate infinite;
+}
+.fb-share-button{
+	margin: 20px;
 }
