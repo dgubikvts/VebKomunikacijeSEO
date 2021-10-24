@@ -15,6 +15,8 @@ body, html
 
 .header
 {
+	display: flex;
+	justify-content: space-between;
 	color: white;
 	padding: 20px 0;
 	background-color: #141819;
@@ -23,17 +25,10 @@ body, html
 	z-index: 1;
 }
 
-.header h1
-{
-	-webkit-text-stroke: 3px black;
-	float: left;
-	font-size: 45px;
-	padding-left: 220px;
-}
+
 
 .header nav
 {
-	float: right;
 	margin-top: 5px;
 }
 
@@ -62,6 +57,11 @@ body, html
 	text-decoration: underline;
 }
 
+.header img{
+	width: 100px;
+	margin-left: 150px;
+}
+
 .bg
 {
 	background:url('slike/bg.jpg') center fixed;
@@ -80,13 +80,6 @@ body, html
  	width: 35%;
  	text-align: center;
  	transition: width 1.5s;
-}
-
-.wrap h2
-{
-	-webkit-text-stroke: 3px black;
-	padding-bottom: 25px;
-	font-size: 32pt;
 }
 
 .wrap:hover
@@ -219,25 +212,28 @@ body, html
 {
 	.bg
 	{
-		padding: 200px;
+		padding: 100px;
 	}
 	.wrap
 	{
-		width: 90%;
+		min-width: 85%;
 	}
 	.wrap:hover
 	{
-		width: 90%;
+		width: 95%;
 	}
 	.column
 	{
 		width: 50%;
 		margin-bottom: 10px;
 	}
+	.header{
+		text-align: center;
+		display: block;
+	}
 	.header nav
 	{
 		margin-top: 10px;
-		float: none;
 	}
 	.header a
 	{
@@ -248,15 +244,8 @@ body, html
 		text-align: center;
 		margin-top: 10px;
 	}
-	.header h1
-	{
-		float: none;
-		margin: 0;
-		padding: 0;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		margin-bottom: 20px;
+	.header img{
+		margin: 0;		
 	}
 	.header
 	{
@@ -302,9 +291,19 @@ body, html
 	background-color: #8d8d96;
 }
 
-span
+#main-text{
+	-webkit-text-stroke: 3px black;
+	padding-bottom: 25px;
+	font-size: 32pt;
+}
+
+#red
 {
 	color: #e24b4b;
+}
+
+.wrap h1{
+	font-size: x-large;
 }
 
 .main
