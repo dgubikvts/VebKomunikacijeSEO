@@ -26,12 +26,10 @@
 	</script>
 </head>
 <body>
- 
 	<div class="header">
-		<img src="slike/logo.png" alt="">
+		<img src="slike/logo.png" alt="TechShop">
 		<nav>
 			<ul>
-				
 				<a href="index.html" class="current">
 				<li>Pocetna</li></a>
 				<a href="shop.html">
@@ -151,23 +149,17 @@
 		<div class="logo">
 			<img src="slike/logo.png" alt="TechShop">
 		</div>
-		<div class="fb-share-button" 
-		data-href="https://techshopvebkomunikacije.000webhostapp.com/" 
-		data-layout="button">
+		<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>		
+		<div class="fb-share-button" data-href="https://techshopvebkomunikacije.000webhostapp.com/" data-layout="button"></div>
 	</div>
-	</div>
-
-	<script>(function(d, s, id) {
-	var js, fjs = d.getElementsByTagName(s)[0];
-	if (d.getElementById(id)) return;
-	js = d.createElement(s); js.id = id;
-	js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
-	fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-
-	<!-- Your share button code -->
-	
-	
 	<div class="footer">
 		<p>Copyright - <span>Tech</span>Shop</p>
 	</div>
