@@ -7,45 +7,45 @@
 
 body, html
 {
+	background-color: #4a4a4a;
     font-family: Apple Chancery, cursive;
 	letter-spacing: 1.5px;
-	background-color: #4a4a4a;
-	scroll-behavior: smooth;
 }
 
 .header
 {
+	background-color: #141819;
+	color: white;
 	display: flex;
 	justify-content: space-between;
-	color: white;
 	padding: 20px 0;
-	background-color: #141819;
 	position: fixed;
 	width: 100%;
 	z-index: 1;
 }
-
-
 
 .header nav
 {
 	margin-top: 5px;
 }
 
-.header a
+.header li 
 {
 	display: inline-block;
-	margin-right: 50px;
-	color: white;
-	font-weight: bold;
-	font-size: 20px;
-	padding: 10px 40px;
-	border: 3px solid #e24b4b;
-	border-radius: 25px;
-	list-style: none;
 }
 
-.header a.current
+.header a {
+	border: 3px solid #e24b4b;
+	border-radius: 25px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	margin-right: 50px;
+	padding: 10px 40px;
+	text-decoration: none;
+}
+
+.current
 {
 	background-color: #e24b4b;
 	color: black;
@@ -58,8 +58,8 @@ body, html
 }
 
 .header img{
-	width: 100px;
 	margin-left: 150px;
+	width: 100px;
 }
 
 .bg
@@ -71,15 +71,16 @@ body, html
 
 .wrap
 {
-	padding: 40px;	
+	background-color: black;
+	background-color: rgba(0, 0, 0, 0.8);
+	border-radius: 50px;
+	color: white;
 	display: block;
 	margin: auto;
- 	background-color: rgba(0, 0, 0, 0.8);
- 	border-radius: 50px;
- 	color: white;
+	padding: 40px;
+	text-align: center;
+	transition: width 1.5s;
  	width: 35%;
- 	text-align: center;
- 	transition: width 1.5s;
 }
 
 .wrap:hover
@@ -89,46 +90,46 @@ body, html
 
 .wrap2
 {
+	background-color: #fef1f1;
+	border-radius: 10px;
 	margin-top: -80px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;
-	text-align: center;
-	background-color: #fef1f1;
 	padding: 80px 40px;
-	border-radius: 10px;
+	text-align: center;
+	width: 80%;
 }
 
-.wrap2 h2
+h2
 {
-	margin-bottom: 30px;
-	font-size: 45px;
 	border-radius: 10px;
+	font-size: 45px;
+	margin-bottom: 30px;
 }
 
 .column
 {
-	position: relative;
+	color: white;
 	display: inline-block;
-	width: 20%;
 	padding: 30px;
+	position: relative;
 	text-align: center;
-   	color: white;
+	width: 20%;
 }
 
 .column a
 {
-	width: 80%;
-	padding: 10px;
 	background-color: #e24b4b;
-	color: black;
 	border-radius: 50px;
-	text-align: center;
+	color: black;
 	display: block;
-	position: absolute;
-	top: 85%;
 	left: 50%;
+	padding: 10px;
+	position: absolute;
 	transform: translateX(-50%);
+	text-align: center;
+	top: 85%;
+	width: 80%;
 }
 
 .column a:hover
@@ -136,18 +137,18 @@ body, html
 	text-decoration: underline;
 }
 
-#slikawrap{
-	width: 100%;
+.slikawrap{
 	height: 400px;
+	width: 100%;
 }
 
-#slikawrap img
+.slikawrap img
 {
 	display: block;
-	width: 100%;
+	margin-bottom: 60px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 60px;
+	width: 100%;
 }
 
 .column h2
@@ -182,7 +183,7 @@ body, html
 	.shop{
 		min-width: 80%;
 	}
-	#shopslika img{
+	.shopslika img{
 		max-width: 100%;
 		max-height: 100%;
 	}
@@ -196,14 +197,14 @@ body, html
 		border: 2px dotted #e24b4b;
 		margin: 20px 0;
 	}
-	#cena
+	.cena
 	{
 		text-align: justify;
 	}
-	#shopslika{
+	.shopslika{
 		max-height: 300px;
 	}
-	#shopslika img{
+	.shopslika img{
 		width: 40%;
 	}
 }
@@ -235,14 +236,14 @@ body, html
 	{
 		margin-top: 10px;
 	}
+	.header li{
+		display: block;
+		margin-top: 30px;
+	}
 	.header a
 	{
 		margin-left: auto;
 		margin-right: auto;
-		display: block;
-		width: 20%;
-		text-align: center;
-		margin-top: 10px;
 	}
 	.header img{
 		margin: 0;		
@@ -251,7 +252,7 @@ body, html
 	{
 		position: static;
 	}
-	.wrap h2
+	h2
 	{
 		font-size: 25px;
 	}
@@ -263,7 +264,7 @@ body, html
 	{
 		display: none;
 	}
-	#shopslika{
+	.shopslika{
 		max-height: 200px;
 	}
 	.logokontakt{
@@ -271,33 +272,32 @@ body, html
 	}
 }
 
-#jedan
+.jedan
 {
 	background-color: #252528;
 }
 
-#dva
+.dva
 {
 	background-color: #414149;
 }
 
-#tri
+.tri
 {
 	background-color: #5d5d65;
 }
 
-#cetiri
+.cetiri
 {
 	background-color: #8d8d96;
 }
-
-#main-text{
+.main-text{
 	-webkit-text-stroke: 3px black;
 	padding-bottom: 25px;
 	font-size: 32pt;
 }
 
-#red
+.red
 {
 	color: #e24b4b;
 }
@@ -350,7 +350,7 @@ body, html
 	text-align: justify;
 }
 
-#cena
+.cena
 {
 	margin-top: 40px;
 	font-weight: bold;
@@ -408,7 +408,7 @@ hr
 	font-weight: bold;
 }
 
-#polje, #poruka
+.polje, #poruka
 {
 	margin: 10px 0;
 	padding: 5px;
@@ -521,12 +521,12 @@ button:hover
 	font-size: 15px;
 }
 
-#shopslika{
+.shopslika{
 	width: 95%;
 	height: 400px;
 }
 
-#shopslika img{
+.shopslika img{
 	max-width: 100%;
 	max-height: 100%;
 	margin-bottom: 20px;
